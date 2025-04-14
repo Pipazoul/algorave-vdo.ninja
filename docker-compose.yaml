@@ -1,6 +1,6 @@
 services:
   vod-ninja:
-    image: yassinsiouda/algorave-vdo-ninja
+    image: yassinsiouda/algorave-vdo-ninja:dev
     build: .
     ports:
       - 8008:80
