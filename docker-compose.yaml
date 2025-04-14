@@ -1,0 +1,9 @@
+services:
+  vod-ninja:
+    image: yassinsiouda/algorave-vdo-ninja
+    build: .
+    ports:
+      - 8008:80
+    volumes:
+      - ./:/usr/share/nginx/html
+    

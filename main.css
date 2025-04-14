@@ -22,7 +22,7 @@
 	/* Lightmode white - Darker to lighter */
 	--lighttheme-1: #fff;
 	--lighttheme-2: #f3f3f3;
-	--lighttheme-3: #ddd;
+	--lighttheme-3: #a39585;
 	--lighttheme-4: #ccc; /* primary */
 	--lighttheme-5: #bbb;
 	--lighttheme-6: #aaa;
@@ -67,7 +67,7 @@
 	--rtl-or-ltr: left;
 	
 	/* Original colors */
-	--background-color: #141926;
+	--background-color: #fff0dc;
 	--dark-background-color: #02050c;
 	--container-color: #373737;
 	--button-color: #2A2A2A;
@@ -2417,6 +2417,7 @@ div#chatBody a {
 
 h2 {
 	color: white;
+	text-transform: uppercase;
 	-webkit-user-select: none;
 	/* Safari */
 	-moz-user-select: none;
@@ -2542,7 +2543,7 @@ label {
 }
 
 .column>h2 {
-	color: black;
+	color: #ff4346;
 }
 
 .graphSection {
