@@ -2861,22 +2861,22 @@
 			session.version = "27.4"; // updated: default 1080p now + tweaked outbound bandwidth logic
 			session.streamID = session.generateStreamID(); // randomly generates a streamID for this session. You can set your own programmatically if needed
 			
-			session.defaultPassword = "someEncryptionKey123"; // Change this password if self-deploying for added security/privacy
+			session.defaultPassword = "J4igBL8PcfRY"; // Change this password if self-deploying for added security/privacy
 			// session.salt = location.hostname; // used only if password is not == False. You can change to "session.salt = location.hostname+location.pathname;" for greater deployment isolation
 			
-			session.stunServers = [{ urls: ["stun:stun.l.google.com:19302", "stun:stun.cloudflare.com:3478"]}]; // google + cloudflare stun servers. default
+			session.stunServers = [{ urls: ["stun:165.227.149.226:3478"]}]; // google + cloudflare stun servers. default
 			
 			///////////////  ------  Custom basic TURN SETUP SECTION STARTS Here --------
-			// session.configuration = {         // uncomment to disable the default usage of the vdo.ninja turn servers.
-			//	iceServers: session.stunServers,
-			//	sdpSemantics: session.sdpSemantics
-			// };
-			// var turn = {}; // Just an example entry for a basic TURN server 
-			// turn.username = "steve";
-			// turn.credential = "justtesting";
-			// turn.urls = ["turn:turn.obs.ninja:443"]; 
-			// session.configuration.iceServers.push(turn);
-			//
+			session.configuration = {         // uncomment to disable the default usage of the vdo.ninja turn servers.
+				iceServers: session.stunServers,
+				sdpSemantics: session.sdpSemantics
+			};
+			var turn = {}; // Just an example entry for a basic TURN server 
+			turn.username = "algorave";
+			turn.credential = "J4igBL8PcfRY";
+			turn.urls = ["turn:165.227.149.226:3478"]; 
+			session.configuration.iceServers.push(turn);
+			
 			// turn = {}; // second turn server example entry. 
 			// turn.username = "steve";
 			// turn.credential = "justtesting";
