@@ -1693,7 +1693,7 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: var(--background-color);
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: C64;
 	border: 0;
 	margin: 0;
 	opacity: 1;
@@ -6165,6 +6165,15 @@ button.toggleSettings,
 /**
  * Below lsits the classes and font styles for the font-awesome icons.
  */
+
+ @font-face {
+	font-family: 'C64';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url("fonts/C64_Pro_Mono-STYLE.woff2") format("woff2");
+}
+
 
 @font-face {
 	font-family: 'Line Awesome Free';
